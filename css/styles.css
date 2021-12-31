@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+--light:200;
+--regular:400;
+--bold:600;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+}
+
+header{
+    text-align: center;
+    margin: 20px;
+    padding:30px 40pxpx;
+}
+
+.para1{
+    font-weight: var(--regular);
+    color:var(--Grayish-Blue);
+    text-align: center;
+    
+}
+
+.para{
+    color: var(--Grayish-Blue)
+}
+.bold{
+    font-weight: var(--bold);
+}
+.light{
+    font-weight: var(--light);
+}
+.card_section{
+    margin:50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 2px 10px 0 var(--Grayish-Blue);
+    margin: 10px;
+    padding: 30px 40px;
+    border-radius: 4px;
+}
+
+.card1{
+    border-top: 3px solid var(--Cyan);
+}
+.card2{
+    border-top: 3px solid var(--Red);
+}
+.card3{
+    border-top: 3px solid var(--Orange);
+}
+.card4{
+    border-top: 3px solid var(--Blue);
+}
+.icon{
+    float: right;
+}
+
+   .attribution { 
+       font-size: 11px; 
+       text-align: center;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    @media screen and (max-width:800px){
+        
+        .card_section{
+            flex-direction: column;
+        }
+    }
